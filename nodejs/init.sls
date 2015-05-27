@@ -15,6 +15,7 @@ nodejs:
     - require:
       - pkgrepo: nodejs.ppa
 
+#shoud be configrable via pillar
 less:
   npm.installed:
     - require:
