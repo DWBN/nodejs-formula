@@ -1,3 +1,5 @@
+
+{% if grains['oscodename']=="trusty" %} 
 nodejs.ppa:
   pkgrepo.managed:
     - humanname: node.js PPA
@@ -20,4 +22,15 @@ less:
     - require:
       - pkg: nodejs
 
+{% elif grains['oscodename']=="xenial" %} 
 
+
+nodejs:
+  pkg.installed:
+    - name: nodejs
+
+less:
+  npm.installed:
+    - name npm
+
+{% endif %}
