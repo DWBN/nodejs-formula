@@ -31,6 +31,6 @@ nodejs:
 
 less:
   npm.installed:
-    - name npm
+    - name: npm
 
 {% endif %}
