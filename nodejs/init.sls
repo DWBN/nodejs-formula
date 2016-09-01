@@ -29,6 +29,9 @@ nodejs:
   pkg.installed:
     - name: nodejs
 
+npm:
+  pkg.installed
+
 less:
   npm.installed:
     - name: npm
