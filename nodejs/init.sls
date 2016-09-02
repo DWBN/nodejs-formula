@@ -33,7 +33,6 @@ npm:
   pkg.installed
 
 less:
-  npm.installed:
-    - name: npm
+  npm.installed
 
 {% endif %}
